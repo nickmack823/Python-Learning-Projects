@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <h1> Hello World! </h1>
+    <h2> {{5 * 6}} </h2>
+    <h3> Random Number (1-10): {{ num }}</h3>
+
+    <!--url_for() creates a url for a Flask app function with kwargs as parameters-->
+<a href="{{ url_for('get_blog', blog_number=1) }}"> Go to blog </a>
+</body>
+<footer>
+    <p> Copyright {{ current_year }}. Built by Nicholas MacKinnon </p>
+</footer>
+</html>
